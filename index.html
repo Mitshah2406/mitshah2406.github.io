@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/ff1bb2f217.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="sass/index.css">
 </head>
 
 <body>
 
     <!-- --- navbar ---  -->
-
     <nav class="navbar">
         <i class="fas fa-bars" id="hamburger"></i>
         <a href="#home" class="logo" id="logo">MIT SHAH</a>
@@ -22,51 +22,53 @@
             <a href="#about">about</a>
             <a href="#skills">skills</a>
             <a href="#projects">projects</a>
-            <a href="#interests">interests</a>
+            <a href="#services">services</a>
             <a href="#contact">contact</a>
-        </div>
-        <div class="search-wrapper">
-            <input type="search" name="search" id="search" placeholder="" autocomplete="on">
-            <i class="fas fa-search" id="searchbtn"></i>
         </div>
     </nav>
 
     <!-- --- home --- -->
 
     <section class="home" id="home">
+        <div id="particles-js"></div>
         <div class="text-wrapper">
-            <div class="static-txt">Hi,<span style="color:#0984e3"> &nbspI Am&nbsp</span><span class="intro-name"> Mit
-                    Shah</span><span style="color:#11274b"> &nbsp!!!</span></div>
+            <div class="static-txt">Hi,<span style="color:#00acee"> &nbspI Am&nbsp</span><span class="intro-name"> Mit
+                    Shah</span><span style="color:#f7f1e3"> &nbsp!!!</span></div>
         </div>
         <div class="container">
             <p>I am a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
         </div>
     </section>
-
     <!-- ---- about ---- -->
     <section class="about" id="about">
-        <h1 class="heading"><span>About</span> Me</h1>
+        <div class="heading">
+            <h1>About
+                <span>Me</span>
+            </h1>
+        </div>
         <div class="row">
-            <div class="image"><img src="/images/profilephoto.png" alt=""></div>
+            <div class="image"><img src="images/profilephoto.png" alt=""></div>
             <div class="content">
                 <h1>know me</h1>
                 <h2>I am mit shah,</h2>
-                <p>I am currently studying diploma in computer science at vidyalankar polytechnic, mumbai. I have a great command in python and javascript & backend frameworks.</p>
-                <p>I am a passionate coder and a programmer who has great error handling skills and loves to build softwares
+                <p>I am currently studying diploma in computer science at vidyalankar polytechnic, mumbai. I have a
+                    great command in python and javascript & backend frameworks.</p>
+                <p>I am a passionate coder and a programmer who has great error handling skills and loves to build
+                    softwares
                     and websites.</p>
                 <div class="info-icon-wrapper">
                     <div class="age box">
-                        <img src="/images/png/003-man.png" alt="">
+                        <img src="images/png/003-man.png" alt="">
                         <h3>Age</h3>
                         <p>17</p>
                     </div>
                     <div class="experience box">
-                        <img src="/images/png/001-experience.png" alt="">
+                        <img src="images/png/001-experience.png" alt="">
                         <h3>experience</h3>
                         <p>2<span>+</span></p>
                     </div>
                     <div class="projects box">
-                        <img src="/images/png/002-idea.png" alt="">
+                        <img src="images/png/002-idea.png" alt="">
                         <h3>Projects Built</h3>
                         <p>10<span>+</span></p>
                     </div>
@@ -75,6 +77,1233 @@
         </div>
     </section>
 
+
+    <!-- ---- skills section ---- -->
+    <section class="skills" id="skills">
+        <div class="height-adjusted-wrapper">
+            <div class="skills-container">
+                <!-- grid -->
+                <div>
+                    <!-- 1 -->
+                    <div class="skill_content skill_open">
+                        <div class="skill_header">
+                            <div>
+                                <i class="fas fa-code skill_icon"></i>
+                                <div>
+                                    <h1 class="skill_title">Frontend languages</h1>
+                                    <span class="skill_subtitle">more than 2 years</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-down skill_arrow"></i>
+                        </div>
+                        <div class="skills_list">
+                            <!-- grid -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">HTML</h3>
+                                    <span class="skill_number">90%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_html"></div>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">css</h3>
+                                    <span class="skill_number">90%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_css"></div>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">SCSS</h3>
+                                    <span class="skill_number">90%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_scss"></div>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">javascript</h3>
+                                    <span class="skill_number">80%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_js"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="skill_content skill_close">
+                        <div class="skill_header">
+                            <div>
+                                <i class="fas fa-server skill_icon" style="margin-left: .2rem;"></i>
+                                <div>
+                                    <h1 class="skill_title">backend frameworks</h1>
+                                    <span class="skill_subtitle">more than 1/2 years</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-down skill_arrow"></i>
+                        </div>
+                        <div class="skills_list">
+                            <!-- grid -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">Django</h3>
+                                    <span class="skill_number">80%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_django"></div>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">Flask</h3>
+                                    <span class="skill_number">75%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_flask"></div>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">NodeJS</h3>
+                                    <span class="skill_number">85%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_node"></div>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">ExpressJS</h3>
+                                    <span class="skill_number">90%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_express"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!-- 3 -->
+                    <div class="skill_content skill_close">
+                        <div class="skill_header">
+                            <div>
+                                <i class="fas fa-laptop-code skill_icon" style="margin-left: -.2rem;"></i>
+                                <div>
+                                    <h1 class="skill_title">Programming Languages</h1>
+                                    <span class="skill_subtitle">more than 3 years</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-down skill_arrow"></i>
+                        </div>
+                        <div class="skills_list">
+                            <!-- grid -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">Python</h3>
+                                    <span class="skill_number">75%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_python"></div>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">Java</h3>
+                                    <span class="skill_number">80%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_java"></div>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">c</h3>
+                                    <span class="skill_number">90%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_c"></div>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">C++</h3>
+                                    <span class="skill_number">85%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_cpp"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="skill_content skill_close">
+                        <div class="skill_header">
+                            <div>
+                                <i class="fas fa-database skill_icon" style="margin-left: .3rem;"></i>
+                                <div>
+                                    <h1 class="skill_title">Database & Skills</h1>
+                                    <span class="skill_subtitle">more than 1 years</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-down skill_arrow"></i>
+                        </div>
+                        <div class="skills_list">
+                            <!-- grid -->
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">LIVE SQL</h3>
+                                    <span class="skill_number">85%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_sql"></div>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">MongoDB</h3>
+                                    <span class="skill_number">90%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_mongo"></div>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">Bootstrap 5</h3>
+                                    <span class="skill_number">90%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_bootstrap"></div>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_title">
+                                    <h3 class="skill_name">Photoshop</h3>
+                                    <span class="skill_number">75%</span>
+                                </div>
+                                <div class="skill_bar">
+                                    <div class="skill_percentage skill_photoshop"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- projects section -->
+    <section class="projects" id="projects">
+        <div class="heading">
+            <h1>Projects
+                <span>by Me</span>
+            </h1>
+        </div>
+        <h2 class="slider-heading">My Websites</h2>
+        <div class="swiper projects-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/profilephoto.png">
+                        <div class="grey-content-box">
+                            <p>COFFEE WEBSITE</p>
+                            <div class="icons-wrapper">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="website-name">Coffee<span>Website</span></div>
+                        <p>
+                            This is a coffee website template in which i have used my frontend skills such as HTML, CSS
+                            , JavaScript.
+                        </p>
+                        <div class="icons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="btn">
+                            <div class="shop-now">View Website</div>
+                            <div class="snowflake-grid to-left">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snowflake-grid to-right">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/profilephoto.png">
+                        <div class="grey-content-box">
+                            <p>COFFEE WEBSITE</p>
+                            <div class="icons-wrapper">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="website-name">Coffee<span>Website</span></div>
+                        <p>
+                            This is a coffee website template in which i have used my frontend skills such as HTML, CSS
+                            , JavaScript.
+                        </p>
+                        <div class="icons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="btn">
+                            <div class="shop-now">View Website</div>
+                            <div class="snowflake-grid to-left">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snowflake-grid to-right">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/profilephoto.png">
+                        <div class="grey-content-box">
+                            <p>COFFEE WEBSITE</p>
+                            <div class="icons-wrapper">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="website-name">Coffee<span>Website</span></div>
+                        <p>
+                            This is a coffee website template in which i have used my frontend skills such as HTML, CSS
+                            , JavaScript.
+                        </p>
+                        <div class="icons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="btn">
+                            <div class="shop-now">View Website</div>
+                            <div class="snowflake-grid to-left">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snowflake-grid to-right">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/profilephoto.png">
+                        <div class="grey-content-box">
+                            <p>COFFEE WEBSITE</p>
+                            <div class="icons-wrapper">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="website-name">Coffee<span>Website</span></div>
+                        <p>
+                            This is a coffee website template in which i have used my frontend skills such as HTML, CSS
+                            , JavaScript.
+                        </p>
+                        <div class="icons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="btn">
+                            <div class="shop-now">View Website</div>
+                            <div class="snowflake-grid to-left">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snowflake-grid to-right">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/profilephoto.png">
+                        <div class="grey-content-box">
+                            <p>COFFEE WEBSITE</p>
+                            <div class="icons-wrapper">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="website-name">Coffee<span>Website</span></div>
+                        <p>
+                            This is a coffee website template in which i have used my frontend skills such as HTML, CSS
+                            , JavaScript.
+                        </p>
+                        <div class="icons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="btn">
+                            <div class="shop-now">View Website</div>
+                            <div class="snowflake-grid to-left">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snowflake-grid to-right">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/profilephoto.png">
+                        <div class="grey-content-box">
+                            <p>COFFEE WEBSITE</p>
+                            <div class="icons-wrapper">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="website-name">Coffee<span>Website</span></div>
+                        <p>
+                            This is a coffee website template in which i have used my frontend skills such as HTML, CSS
+                            , JavaScript.
+                        </p>
+                        <div class="icons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="btn">
+                            <div class="shop-now">View Website</div>
+                            <div class="snowflake-grid to-left">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snowflake-grid to-right">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+
+
+
+        <h2 class="slider-heading">Python Projects</h2>
+        <div class="swiper projects-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/profilephoto.png">
+                        <div class="grey-content-box">
+                            <p>COFFEE WEBSITE</p>
+                            <div class="icons-wrapper">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="website-name">Coffee<span>Website</span></div>
+                        <p>
+                            This is a coffee website template in which i have used my frontend skills such as HTML, CSS
+                            , JavaScript.
+                        </p>
+                        <div class="icons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="btn">
+                            <div class="shop-now">View Website</div>
+                            <div class="snowflake-grid to-left">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snowflake-grid to-right">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/profilephoto.png">
+                        <div class="grey-content-box">
+                            <p>COFFEE WEBSITE</p>
+                            <div class="icons-wrapper">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="website-name">Coffee<span>Website</span></div>
+                        <p>
+                            This is a coffee website template in which i have used my frontend skills such as HTML, CSS
+                            , JavaScript.
+                        </p>
+                        <div class="icons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="btn">
+                            <div class="shop-now">View Website</div>
+                            <div class="snowflake-grid to-left">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snowflake-grid to-right">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/profilephoto.png">
+                        <div class="grey-content-box">
+                            <p>COFFEE WEBSITE</p>
+                            <div class="icons-wrapper">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="website-name">Coffee<span>Website</span></div>
+                        <p>
+                            This is a coffee website template in which i have used my frontend skills such as HTML, CSS
+                            , JavaScript.
+                        </p>
+                        <div class="icons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="btn">
+                            <div class="shop-now">View Website</div>
+                            <div class="snowflake-grid to-left">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snowflake-grid to-right">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/profilephoto.png">
+                        <div class="grey-content-box">
+                            <p>COFFEE WEBSITE</p>
+                            <div class="icons-wrapper">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="website-name">Coffee<span>Website</span></div>
+                        <p>
+                            This is a coffee website template in which i have used my frontend skills such as HTML, CSS
+                            , JavaScript.
+                        </p>
+                        <div class="icons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="btn">
+                            <div class="shop-now">View Website</div>
+                            <div class="snowflake-grid to-left">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snowflake-grid to-right">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/profilephoto.png">
+                        <div class="grey-content-box">
+                            <p>COFFEE WEBSITE</p>
+                            <div class="icons-wrapper">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="website-name">Coffee<span>Website</span></div>
+                        <p>
+                            This is a coffee website template in which i have used my frontend skills such as HTML, CSS
+                            , JavaScript.
+                        </p>
+                        <div class="icons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="btn">
+                            <div class="shop-now">View Website</div>
+                            <div class="snowflake-grid to-left">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snowflake-grid to-right">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="images/profilephoto.png">
+                        <div class="grey-content-box">
+                            <p>COFFEE WEBSITE</p>
+                            <div class="icons-wrapper">
+                                <i class="fab fa-github"></i>
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="website-name">Coffee<span>Website</span></div>
+                        <p>
+                            This is a coffee website template in which i have used my frontend skills such as HTML, CSS
+                            , JavaScript.
+                        </p>
+                        <div class="icons-wrapper">
+                            <i class="fab fa-github"></i>
+                            <i class="fas fa-share"></i>
+                        </div>
+                        <div class="btn">
+                            <div class="shop-now">View Website</div>
+                            <div class="snowflake-grid to-left">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="snowflake-grid to-right">
+                                <div class="snowflake-item border-bottom border-right">
+                                    <div class="sub-items border-right border-bottom pull-down">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-bottom border-left">
+                                    <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-right">
+                                    <div class="sub-items border-right border-bottom r-270 pull-right">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                                <div class="snowflake-item border-top border-left">
+                                    <div class="sub-items border-right border-bottom r-180 pull-left">
+                                        <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
+    <!-- --- services section --- -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h1>services
+                <span>i provide</span>
+            </h1>
+        </div>
+        <div class="services-wrapper">
+            <div class="services-box">
+                <img src="images/001-ux.png" alt="">
+                <h2>Frontend Development</h2>
+                <div class="content">
+                    <div class="service">
+                        <span class="fas fa-check"></span>
+                        <span>Fully responsive</span>
+                    </div>
+                    <div class="service">
+                        <span class="fas fa-check"></span>
+                        <span>Compatible on all browsers</span>
+                    </div>
+                    <div class="service">
+                        <span class="fas fa-check"></span>
+                        <span>Clean and optimum design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="services-box">
+                <img src="images/002-backend.png" alt="">
+                <h2>Backend Development</h2>
+                <div class="content">
+                    <div class="service">
+                        <span class="fas fa-check"></span>
+                        <span>Stable server</span>
+                    </div>
+                    <div class="service">
+                        <span class="fas fa-check"></span>
+                        <span>secured server & Database</span>
+                    </div>
+                    <div class="service">
+                        <span class="fas fa-check"></span>
+                        <span>well maintained & bug free</span>
+                    </div>
+                </div>
+            </div>
+            <div class="services-box">
+                <img src="images/003-ux-design.png" alt="">
+                <h2>UI/UX Design</h2>
+                <div class="content">
+                    <div class="service">
+                        <span class="fas fa-check"></span>
+                        <span>User-friendly interface</span>
+                    </div>
+                    <div class="service">
+                        <span class="fas fa-check"></span>
+                        <span>SEO friendly</span>
+                    </div>
+                    <div class="service">
+                        <span class="fas fa-check"></span>
+                        <span>Eye-catching layouts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---contact section -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h1>contact
+                <span>us</span>
+            </h1>
+        </div>
+        <div class="row">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15080.409633829217!2d73.00202923037953!3d19.103162793155917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c0da9e93097f%3A0xd54c1cc7981cf314!2sKopar%20Khairane%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1640528808520!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <form action="post" class="form">
+                <h2>Get In Touch</h2>
+                <input type="text" name="name" class="inputs" placeholder="Enter Your Name">
+                <input type="number" name="number" class="inputs" placeholder="Enter Your Number">
+                <input type="email" name="email" class="inputs" placeholder="abc@xyz.com">
+                <textarea name="msg" cols="30" rows="8" class="inputs" placeholder="Enter Your Message"></textarea>
+                <div class="btn">
+                    <div class="shop-now">Send Message</div>
+                    <div class="snowflake-grid to-left">
+                        <div class="snowflake-item border-bottom border-right">
+                            <div class="sub-items border-right border-bottom pull-down">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-bottom border-left">
+                            <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-top border-right">
+                            <div class="sub-items border-right border-bottom r-270 pull-right">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-top border-left">
+                            <div class="sub-items border-right border-bottom r-180 pull-left">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snowflake-grid to-right">
+                        <div class="snowflake-item border-bottom border-right">
+                            <div class="sub-items border-right border-bottom pull-down">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-bottom border-left">
+                            <div class="sub-items border-right border-bottom r-90 pull-down-right">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-top border-right">
+                            <div class="sub-items border-right border-bottom r-270 pull-right">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                        <div class="snowflake-item border-top border-left">
+                            <div class="sub-items border-right border-bottom r-180 pull-left">
+                                <div class="m-w-15 m-h-15 border-right border-bottom m-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- ---- particle js---- -->
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- custom js -->
     <script src="js/textAnime.js"></script>
     <script src="js/script.js"></script>
