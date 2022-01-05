@@ -11,10 +11,13 @@ for (let i = 0; i < links.length; i++) {
 
 let navlist = document.querySelector('.navlist');
 let hamburgerButton = document.querySelector('#hamburger');
-
-hamburger.addEventListener('click',()=>{
-    navlist.classList.toggle('active');
-    hamburger.classList.toggle('fa-times');
+let closeBtn = document.querySelector('#close')
+hamburgerButton.addEventListener('click',()=>{
+    navlist.classList.add('active');
+    
+})
+closeBtn.addEventListener('click',()=>{
+    navlist.classList.remove('active')
 })
 
 let navbar = document.querySelector('.navbar');
@@ -31,7 +34,8 @@ window.addEventListener('scroll',()=>{
     else{
         navbar.classList.remove('normal');
     }
-    
+    if(window.scrollY>10){
+    navlist.classList.remove('active');}
 })
 
 // ----- skills --------------------------------

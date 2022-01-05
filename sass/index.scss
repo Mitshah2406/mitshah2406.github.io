@@ -289,7 +289,6 @@ section {
     color: $white;
     font-size: 2.5rem;
     cursor: pointer;
-    display: none;
   }
   .logo {
     font-size: 3rem;
@@ -302,26 +301,46 @@ section {
     }
   }
   .navlist {
-    a {
-      font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-color:$lightBlue;
+    @include d-flex(center, center, nowrap);
+    flex-direction: column;
+    clip-path: circle(0% at 0 0);
+    .fa-times{
+      position: absolute;
+      top: 2.4rem;
+      right: 0;
       color: $white;
-      margin: 0 1.5rem;
-      text-align: center;
+      font-size: 2.5rem;
+      cursor: pointer;
+      margin-right:9%;
+    }
+    a {
+      font-size: 4rem;
+      color: $white;
+      margin: 1.5rem 0rem;
+      display:block;
+      text-align:left;
       position: relative;
       padding: 0 0.2rem 0 0.2rem;
       padding-bottom: 0.5rem;
       &:hover {
-        color: $lightShade;
+        color: $darkBlue;
       }
       &:hover::after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         width: 0%;
         height: 0.2rem;
-        background-color: $twitterBlue;
+        background-color: $white;
         animation: underline 0.4s linear forwards;
         @keyframes underline {
           0% {
@@ -333,6 +352,9 @@ section {
         }
       }
     }
+    &.active{
+      clip-path: circle(141.4% at 0 0);
+    }
   }
   &.white {
     background-color: rgb(250, 250, 250);
@@ -341,12 +363,6 @@ section {
     #hamburger,
     .logo {
       color: $fontBlue;
-    }
-    .navlist a {
-      color: $fontBlue;
-      &:hover {
-        color: $lightBlue;
-      }
     }
   }
   &.normal {
@@ -827,8 +843,9 @@ section {
 }
 // --- services section
 .services {
-  background: $light-gray;
-  background: linear-gradient(to bottom, $darkBlue 50%, $twitterBlue 50%,);
+  background: linear-gradient(45deg, rgb(76, 0, 255), transparent),
+  repeating-linear-gradient(45deg, rgb(183, 0, 255) 0%, rgb(183, 0, 255) 5%, transparent 5%, transparent 10%, rgb(183, 0, 255) 10%, rgb(183, 0, 255) 11%, transparent 11%, transparent 13%),
+  rgb(216, 118, 255) repeating-linear-gradient(-45deg, rgba(183, 0, 255, .5) 0%, rgba(183, 0, 255, .5) 5%, transparent 5%, transparent 10%);
   .heading h1 span{
     color: $warm-white;
   }
@@ -857,10 +874,10 @@ section {
         color: $darkBlue;
       }
       .content {
-        padding-top: 3.5rem;
+        padding-top: 4.5rem;
         text-align: left;
         .service {
-          margin-bottom: 1.8rem;
+          margin-bottom: 2.5rem;
           span {
             color: $fontBlue;
             font-size: 2rem;
@@ -946,35 +963,6 @@ section {
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    #hamburger {
-      display: inline-block;
-      &.fa-times {
-        transform: rotate(180deg);
-      }
-    }
-
-    .navlist {
-      position: absolute;
-      top: 99%;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      padding: 2rem;
-      background-color: $darkBlue;
-      clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
-      a {
-        display: block;
-        margin: 2rem 0;
-        text-align: center;
-        font-size: 2.5rem;
-        width: fit-content;
-      }
-      &.active {
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-      }
-    }
-  }
   .home {
     .text-wrapper {
       font-size: 6rem;

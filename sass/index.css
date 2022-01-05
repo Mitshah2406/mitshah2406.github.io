@@ -301,7 +301,6 @@ section {
   color: #fff;
   font-size: 2.5rem;
   cursor: pointer;
-  display: none;
 }
 
 .navbar .logo {
@@ -318,22 +317,60 @@ section {
           transform: scale(0.9);
 }
 
-.navbar .navlist a {
-  font-size: 2rem;
+.navbar .navlist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  height: 100vh;
+  background-color: #0984e3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-clip-path: circle(0% at 0 0);
+          clip-path: circle(0% at 0 0);
+}
+
+.navbar .navlist .fa-times {
+  position: absolute;
+  top: 2.4rem;
+  right: 0;
   color: #fff;
-  margin: 0 1.5rem;
-  text-align: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  margin-right: 9%;
+}
+
+.navbar .navlist a {
+  font-size: 4rem;
+  color: #fff;
+  margin: 1.5rem 0rem;
+  display: block;
+  text-align: left;
   position: relative;
   padding: 0 0.2rem 0 0.2rem;
   padding-bottom: 0.5rem;
 }
 
 .navbar .navlist a:hover {
-  color: #74b9ff;
+  color: #11274b;
 }
 
 .navbar .navlist a:hover::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -341,7 +378,7 @@ section {
           transform: translateX(-50%);
   width: 0%;
   height: 0.2rem;
-  background-color: #00acee;
+  background-color: #fff;
   -webkit-animation: underline 0.4s linear forwards;
           animation: underline 0.4s linear forwards;
 }
@@ -364,6 +401,11 @@ section {
   }
 }
 
+.navbar .navlist.active {
+  -webkit-clip-path: circle(141.4% at 0 0);
+          clip-path: circle(141.4% at 0 0);
+}
+
 .navbar.white {
   background-color: #fafafa;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -375,14 +417,6 @@ section {
 .navbar.white #hamburger,
 .navbar.white .logo {
   color: #130f40;
-}
-
-.navbar.white .navlist a {
-  color: #130f40;
-}
-
-.navbar.white .navlist a:hover {
-  color: #0984e3;
 }
 
 .navbar.normal {
@@ -1043,9 +1077,7 @@ section {
 }
 
 .services {
-  background: #ecf0f1;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #11274b), color-stop(50%, #00acee));
-  background: linear-gradient(to bottom, #11274b 50%, #00acee 50%);
+  background: linear-gradient(45deg, #4c00ff, transparent), repeating-linear-gradient(45deg, #b700ff 0%, #b700ff 5%, transparent 5%, transparent 10%, #b700ff 10%, #b700ff 11%, transparent 11%, transparent 13%), #d876ff repeating-linear-gradient(-45deg, rgba(183, 0, 255, 0.5) 0%, rgba(183, 0, 255, 0.5) 5%, transparent 5%, transparent 10%);
 }
 
 .services .heading h1 span {
@@ -1090,12 +1122,12 @@ section {
 }
 
 .services .services-wrapper .services-box .content {
-  padding-top: 3.5rem;
+  padding-top: 4.5rem;
   text-align: left;
 }
 
 .services .services-wrapper .services-box .content .service {
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.5rem;
 }
 
 .services .services-wrapper .services-box .content .service span {
@@ -1205,37 +1237,6 @@ section {
 }
 
 @media (max-width: 768px) {
-  .navbar #hamburger {
-    display: inline-block;
-  }
-  .navbar #hamburger.fa-times {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  .navbar .navlist {
-    position: absolute;
-    top: 99%;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    padding: 2rem;
-    background-color: #11274b;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
-  }
-  .navbar .navlist a {
-    display: block;
-    margin: 2rem 0;
-    text-align: center;
-    font-size: 2.5rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .navbar .navlist.active {
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-  }
   .home .text-wrapper {
     font-size: 6rem;
   }
