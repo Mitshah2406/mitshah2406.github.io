@@ -84,3 +84,4 @@ var swiper = new Swiper(".projects-slider", {
 });
 
 
+AOS.init();

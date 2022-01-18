@@ -19,7 +19,7 @@ $darkShade: #2980b9;
 $lightShade: #74b9ff;
 $fontBlue: #130f40;
 $white: #fff;
-$box-shadow:0 .5rem 1rem rgba(0, 0, 0, .2);
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 $gray: #2d3436;
 $light-gray: #ecf0f1;
 $warm-white: #f7f1e3;
@@ -303,29 +303,29 @@ section {
   .navlist {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     height: 100vh;
     width: 100%;
     height: 100vh;
-    background-color:$lightBlue;
+    background-color: $lightBlue;
     @include d-flex(center, center, nowrap);
     flex-direction: column;
     clip-path: circle(0% at 0 0);
-    .fa-times{
+    .fa-times {
       position: absolute;
       top: 2.4rem;
       right: 0;
       color: $white;
       font-size: 2.5rem;
       cursor: pointer;
-      margin-right:9%;
+      margin-right: 9%;
     }
     a {
       font-size: 4rem;
       color: $white;
       margin: 1.5rem 0rem;
-      display:block;
-      text-align:left;
+      display: block;
+      text-align: left;
       position: relative;
       padding: 0 0.2rem 0 0.2rem;
       padding-bottom: 0.5rem;
@@ -333,7 +333,7 @@ section {
         color: $darkBlue;
       }
       &:hover::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -352,7 +352,7 @@ section {
         }
       }
     }
-    &.active{
+    &.active {
       clip-path: circle(141.4% at 0 0);
     }
   }
@@ -844,38 +844,82 @@ section {
 // --- services section
 .services {
   background: linear-gradient(45deg, rgb(76, 0, 255), transparent),
-  repeating-linear-gradient(45deg, rgb(183, 0, 255) 0%, rgb(183, 0, 255) 5%, transparent 5%, transparent 10%, rgb(183, 0, 255) 10%, rgb(183, 0, 255) 11%, transparent 11%, transparent 13%),
-  rgb(216, 118, 255) repeating-linear-gradient(-45deg, rgba(183, 0, 255, .5) 0%, rgba(183, 0, 255, .5) 5%, transparent 5%, transparent 10%);
-  .heading h1 span{
-    color: $warm-white;
-  }
+    repeating-linear-gradient(
+      45deg,
+      rgb(183, 0, 255) 0%,
+      rgb(183, 0, 255) 5%,
+      transparent 5%,
+      transparent 10%,
+      rgb(183, 0, 255) 10%,
+      rgb(183, 0, 255) 11%,
+      transparent 11%,
+      transparent 13%
+    ),
+    rgb(216, 118, 255)
+      repeating-linear-gradient(
+        -45deg,
+        rgba(183, 0, 255, 0.5) 0%,
+        rgba(183, 0, 255, 0.5) 5%,
+        transparent 5%,
+        transparent 10%
+      );
+   
+  .heading h1{
+    color:$darkBlue;
+    span {
+      color: $warm-white;
+    }
+  } 
+    
   .services-wrapper {
     @include grid(30rem, 1fr);
     gap: 2rem;
     .services-box {
       text-align: center;
-      padding: 3rem;
-      border-radius: 0.6rem;
+      // padding: 3rem;
+      border-radius: 0rem 0rem .6rem 0.6rem;
       box-shadow: 0.7rem 0.7rem 4.3rem -1.7rem rgba(82, 79, 82, 0.81);
       background-color: $white;
-      border: 0.2rem solid transparent;
+      // border: 0.2rem solid transparent;
       cursor: pointer;
       &:hover {
         box-shadow: none;
-        border-color: $darkBlue;
+        // border-color: $darkBlue;
       }
+      .color-strap{
+        width: 100%;
+        height: 0.7rem;
+        border-radius: 0rem 0rem 0.5rem 0.5rem;
+        margin-bottom: 3rem;
+        &.blue{
+          background-color:#007bff;
+        }
+        &.red{
+          background-color:#dc3545;
+        }
+        &.grey{
+          background-color:#ffc107;
+        }
+          }
       img {
         padding-bottom: 1rem;
         padding-bottom: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
       }
       h2 {
         font-size: 3rem;
         font-weight: bold;
         color: $darkBlue;
+        padding-left: 3rem;
+        padding-right: 3rem;
       }
       .content {
         padding-top: 4.5rem;
         text-align: left;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
         .service {
           margin-bottom: 2.5rem;
           span {
@@ -940,6 +984,51 @@ section {
         }
       }
     }
+  }
+}
+
+/// ---- footer
+
+.footer {
+
+// background-color: rgba(145, 127, 127, 0.08);
+background: url(../images/footer.jpg) no-repeat;
+background-position: center;
+background-size:cover;
+
+.grid-wrapper {
+    z-index: 2;
+    @include grid(45rem, 12rem);
+    .box {
+      text-align: justify;
+      h2 {
+        font-size: 3rem;
+        color: $warm-white;
+        margin-bottom: 2rem;
+      }
+      a {
+        text-align: left;
+        display: block;
+        font-size: 2rem;
+        padding: 1.3rem 0;
+        color: $white;
+        i {
+          padding-right: 1rem;
+        }
+        &:hover {
+          color: $warm-white;
+          i {
+            padding-right: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+  .credit-title{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3.5rem;
+    color: $warm-white;
   }
 }
 // --- media queries
