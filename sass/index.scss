@@ -734,6 +734,8 @@ section {
         .image {
           position: relative;
           overflow: hidden;
+          height: 32rem;
+          border-radius: .6rem;
           img {
             width: 100%;
             border-radius: 0.8rem;
@@ -758,7 +760,7 @@ section {
               @include d-flex(center, center, nowrap);
               width: 100%;
               gap: 1.5rem;
-              i {
+              a {
                 color: $white;
                 width: 4rem;
                 height: 4rem;
@@ -802,7 +804,7 @@ section {
             gap: 1.5rem;
             padding-bottom: 2rem;
             display: none;
-            i {
+            a {
               color: $white;
               width: 5rem;
               height: 5rem;

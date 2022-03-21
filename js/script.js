@@ -62,10 +62,10 @@ var swiper = new Swiper(".projects-slider", {
     loop: true,
     grabCusror: true,
     centeredSlides: true,
-    autoplay: {
-        delay: 9500,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 9500,
+    //     disableOnInteraction: false,
+    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
