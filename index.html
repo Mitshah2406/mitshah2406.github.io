@@ -8,6 +8,7 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/ff1bb2f217.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="sass/index.css">
 </head>
@@ -16,7 +17,7 @@
 
     <!-- --- navbar ---  -->
     <nav class="navbar">
-        <a href="#home" class="logo" id="logo">MIT SHAH</a>
+        <a href="#home" class="logo" id="logo"data-aos="flip-left" data-aos-delay="200">MIT SHAH</a>
         <i class="fas fa-bars" id="hamburger"></i>
         <div class="navlist">
             <i class="fas fa-times" id="close"></i>
@@ -43,14 +44,15 @@
     </section>
     <!-- ---- about ---- -->
     <section class="about" id="about">
-        <div class="heading">
+        <div class="heading" data-aos="zoom-out" 
+        data-aos-duration="700"data-aos-delay="150">
             <h1>About
                 <span>Me</span>
             </h1>
         </div>
         <div class="row">
-            <div class="image"><img src="images/profilephoto.png" alt=""></div>
-            <div class="content">
+            <div class="image" data-aos="fade-up-right" data-aos-delay="200" data-aos-duration="1000"><img src="images/profilephoto.png" alt=""></div>
+            <div class="content" data-aos="fade-down-left" data-aos-delay="200"data-aos-duration="1000">
                 <h1>know me</h1>
                 <h2>I am mit shah,</h2>
                 <p>I am currently studying diploma in computer science at vidyalankar polytechnic, mumbai. I have a
@@ -82,7 +84,7 @@
 
     <!-- ---- skills section ---- -->
     <section class="skills" id="skills">
-        <div class="height-adjusted-wrapper">
+        <div class="height-adjusted-wrapper"data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150">
             <div class="skills-container">
                 <!-- grid -->
                 <div>
@@ -304,13 +306,13 @@
 
      <!-- projects section -->
      <section class="projects" id="projects">
-        <div class="heading">
+        <div class="heading" data-aos="zoom-out" data-aos-duration="700" data-aos-delay="150">
             <h1>Projects
                 <span>by Me</span>
             </h1>
         </div>
-        <h2 class="slider-heading">My Websites</h2>
-        <div class="swiper projects-slider">
+        <h2 class="slider-heading" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">My Websites</h2>
+        <div class="swiper projects-slider" data-aos="zoom-in-down"data-aos-duration="700" data-aos-delay="150">
             <div class="swiper-wrapper">
                 <div class="swiper-slide box">
                     <div class="image">
@@ -319,7 +321,7 @@
                             <p>Music Player</p>
                             <div class="icons-wrapper">
                                 <a href="https://github.com/Mitshah2406/Calculator" target="_blank" class="fab fa-github"></a>
-                                <a class="fas fa-share"></a>
+                                <button onclick="myFunction()" id="t1"name ="https://github.com/Mitshah2406/Calculator" class="fas fa-share"></button>
                             </div>
                         </div>
                     </div>
@@ -329,7 +331,7 @@
                             This is a simple calculator created using JavaScript.
                         </p>
                         <div class="icons-wrapper">
-                            <a href="https://github.com/Mitshah2406/Calculator" target="_blank" class="fab fa-github"></a>
+                            <a href="https://github.com/Mitshah2406/Calculator" target="_blank" id="t1"class="fab fa-github"></a>
                             <a class="fas fa-share"></a>
                         </div>
                         <a href="https://mitshah2406.github.io/Calculator/"  target="_blank" class="btn">
@@ -388,7 +390,7 @@
                                 <p>Music Player</p>
                                 <div class="icons-wrapper">
                                     <a href="https://github.com/Mitshah2406/Music-Player" target="_blank" class="fab fa-github"></a>
-                                    <a class="fas fa-share"></a>
+                                    <button onclick="myFunction()" name ="https://github.com/Mitshah2406/Music-Player" class="fas fa-share"></button>
                                 </div>
                             </div>
                         </div>
@@ -457,7 +459,7 @@
                                 <p>login form with shake effect</p>
                                 <div class="icons-wrapper">
                                     <a href="https://github.com/Mitshah2406/Login-Form-With-Shake-Animation" class="fab fa-github"></a>
-                                    <a class="fas fa-share"></a>
+                                    <button onclick="myFunction()" name ="https://github.com/Mitshah2406/Login-Form-With-Shake-Animation" class="fas fa-share"></button>
                                 </div>
                             </div>
                         </div>
@@ -526,7 +528,7 @@
                                 <p>BMI Calculator</p>
                                 <div class="icons-wrapper">
                                     <a href="https://github.com/Mitshah2406/BMI-Calculator" target="_blank" class="fab fa-github"></a>
-                                    <a class="fas fa-share"></a>
+                                    <button onclick="myFunction()" name ="https://github.com/Mitshah2406/BMI-Calculator" class="fas fa-share"></button>
                                 </div>
                             </div>
                         </div>
@@ -595,7 +597,7 @@
                                 <p>Analog Clock</p>
                                 <div class="icons-wrapper">
                                     <a href="https://github.com/Mitshah2406/Analog-Clock"  target="_blank" class="fab fa-github"></a>
-                                    <a class="fas fa-share"></a>
+                                    <button onclick="myFunction()" name ="https://github.com/Mitshah2406/Analog-Clock" class="fas fa-share"></button>
                                 </div>
                             </div>
                         </div>
@@ -664,7 +666,7 @@
                                 <p>Detect Pressed Key</p>
                                 <div class="icons-wrapper">
                                     <a href="https://github.com/Mitshah2406/Detect-key-pressed-in-keyboard" target="_blank" class="fab fa-github"></a>
-                                    <a class="fas fa-share"></a>
+                                    <button onclick="myFunction()" name ="https://github.com/Mitshah2406/Detect-key-pressed-in-keyboard" class="fas fa-share"></button>
                                 </div>
                             </div>
                         </div>
@@ -736,13 +738,13 @@
 
     <!-- --- services section --- -->
     <section class="services" id="services">
-        <div class="heading">
+        <div class="heading"data-aos="zoom-out" data-aos-duration="700" data-aos-delay="150">
             <h1>services
                 <span>i provide</span>
             </h1>
         </div>
         <div class="services-wrapper">
-            <div class="services-box">
+            <div class="services-box"data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
                 <div class="color-strap blue"></div>
                 <img src="images/001-ux.png" alt="">
                 <h2>Frontend Development</h2>
@@ -761,7 +763,7 @@
                     </div>
                 </div>
             </div>
-            <div class="services-box">
+            <div class="services-box"data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                 <div class="color-strap red"></div>
                 <img src="images/002-backend.png" alt="">
                 <h2>Backend Development</h2>
@@ -780,7 +782,7 @@
                     </div>
                 </div>
             </div>
-            <div class="services-box">
+            <div class="services-box"data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
                 <div class="color-strap grey"></div>
                 <img src="images/003-ux-design.png" alt="">
                 <h2>UI/UX Design</h2>
@@ -804,16 +806,16 @@
 
     <!-- ---contact section -->
     <section class="contact" id="contact">
-        <div class="heading">
+        <div class="heading"data-aos="zoom-out" data-aos-duration="700" data-aos-delay="150">
             <h1>contact
                 <span>us</span>
             </h1>
         </div>
         <div class="row">
-            <iframe class="map"
+            <iframe class="map" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15080.409633829217!2d73.00202923037953!3d19.103162793155917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c0da9e93097f%3A0xd54c1cc7981cf314!2sKopar%20Khairane%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1640528808520!5m2!1sen!2sin"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <form action="post" class="form">
+            <form action="post" class="form"data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
                 <h2>Get In Touch</h2>
                 <input type="text" name="name" class="inputs" placeholder="Enter Your Name">
                 <input type="number" name="number" class="inputs" placeholder="Enter Your Number">
@@ -875,7 +877,7 @@
 
     <section class="footer">
         <div class="grid-wrapper">
-            <div class="box">
+            <div class="box"data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
                 <h2>quick links</h2>
                 <a href="#home"><i class="fas fa-home"></i> home</a>
                 <a href="#about"><i class="fas fa-user"></i> about</a>
@@ -884,7 +886,7 @@
                 <a href="#projects"><i class="fas fa-tasks"></i> projects</a>
                 <a href="#contact"><i class="fas fa-id-card"></i> contact</a>
             </div>
-            <div class="box">
+            <div class="box"data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
                 <h2>Connect with me</h2>
                 <a href="https://github.com/Mitshah2406" target="_blank"><i class="fab fa-github"></i> github</a>
                 <a href="https://www.instagram.com/mitshah2406/" target="_blank"><i class="fab fa-instagram"></i>
@@ -903,6 +905,10 @@
     </section>
     <!-- --------- aos --------- -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- ---- particle js---- -->
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>

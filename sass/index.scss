@@ -760,7 +760,7 @@ section {
               @include d-flex(center, center, nowrap);
               width: 100%;
               gap: 1.5rem;
-              a {
+              a,button {
                 color: $white;
                 width: 4rem;
                 height: 4rem;
@@ -769,6 +769,7 @@ section {
                 place-items: center;
                 font-size: 2rem;
                 cursor: pointer;
+                border:none;
                 background-color: $darkBlue;
                 &:hover {
                   background-color: $lightBlue;
@@ -1007,6 +1008,11 @@ background-size:cover;
         font-size: 3rem;
         color: $warm-white;
         margin-bottom: 2rem;
+        transform: scale(1);
+    letter-spacing: 0.1rem;
+    &:hover {
+      transform: scale(0.9);
+    }
       }
       a {
         text-align: left;

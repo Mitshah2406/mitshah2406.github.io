@@ -977,7 +977,7 @@ section {
   gap: 1.5rem;
 }
 
-.projects .projects-slider .swiper-wrapper .box .image .grey-content-box .icons-wrapper a {
+.projects .projects-slider .swiper-wrapper .box .image .grey-content-box .icons-wrapper a, .projects .projects-slider .swiper-wrapper .box .image .grey-content-box .icons-wrapper button {
   color: #fff;
   width: 4rem;
   height: 4rem;
@@ -987,10 +987,11 @@ section {
   place-items: center;
   font-size: 2rem;
   cursor: pointer;
+  border: none;
   background-color: #11274b;
 }
 
-.projects .projects-slider .swiper-wrapper .box .image .grey-content-box .icons-wrapper a:hover {
+.projects .projects-slider .swiper-wrapper .box .image .grey-content-box .icons-wrapper a:hover, .projects .projects-slider .swiper-wrapper .box .image .grey-content-box .icons-wrapper button:hover {
   background-color: #0984e3;
 }
 
@@ -1270,6 +1271,14 @@ section {
   font-size: 3rem;
   color: #f7f1e3;
   margin-bottom: 2rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  letter-spacing: 0.1rem;
+}
+
+.footer .grid-wrapper .box h2:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .footer .grid-wrapper .box a {

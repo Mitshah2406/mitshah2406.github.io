@@ -84,4 +84,31 @@ var swiper = new Swiper(".projects-slider", {
 });
 
 
-AOS.init();
+// copy to clipboard
+// function myFunction() {
+//     /* Get the text field */
+//     var copyText1 = document.querySelector('t1')
+//     var copyText2 = document.querySelector('t2')
+//     var copyText3 = document.querySelector('t3')
+//     var copyText4= document.querySelector('t4')
+//     var copyText5= document.querySelector('t5')
+//     var copyText5= document.querySelector('t6')
+    
+//      /* Copy the text inside the text field */
+//     navigator.clipboard.writeText(copyText1.href);
+  
+
+//   }
+// function myFunction() {
+//     /* Get the text field */
+//     let copyText = document.querySelectorAll('fa-share')
+//     for (let index = 0; index < copyText.length; index++) {
+//         let element = copyText[index];
+//         let txt = element.name
+//     navigator.clipboard.writeText(txt);
+//     }
+  
+//     /* Alert the copied text */
+//     alert("Copied the text: " + copyText.value);
+//   }
+// AOS.init();
