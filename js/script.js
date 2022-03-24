@@ -8,7 +8,7 @@ for (let i = 0; i < links.length; i++) {
     
 }
 //Force page scroll position to top at page refresh in HTML
-window.onbeforeunload = function () {
+window.onload = function () {
     window.scrollTo(0, 0);
   }
 
