@@ -21,14 +21,6 @@ html {
   overflow-x: hidden;
 }
 
-body {
-  overflow-x: hidden;
-}
-
-.aos-init:not(.aos-animate):after {
-  position: fixed;
-}
-
 ::-webkit-scrollbar {
   width: 1rem;
 }
@@ -1317,6 +1309,9 @@ section {
 }
 
 @media (max-width: 991px) {
+  body {
+    overflow-x: hidden;
+  }
   html {
     font-size: 55%;
   }

@@ -30,9 +30,9 @@ html {
   scroll-padding-top: 7rem;
   overflow-x: hidden;
 }
-body{
-  overflow-x: hidden;
-}.aos-init:not(.aos-animate):after {position: fixed;}
+// body{
+//   overflow-x: hidden;
+// }.aos-init:not(.aos-animate):after {position: fixed;}
 ::-webkit-scrollbar {
   width: 1rem;
 }
@@ -1044,6 +1044,9 @@ background-size:cover;
 // --- media queries
 
 @media (max-width: 991px) {
+  body{
+    overflow-x: hidden;
+  }
   html {
     font-size: 55%;
   }
