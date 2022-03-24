@@ -25,6 +25,10 @@ body {
   overflow-x: hidden;
 }
 
+.aos-init:not(.aos-animate):after {
+  position: fixed;
+}
+
 ::-webkit-scrollbar {
   width: 1rem;
 }
