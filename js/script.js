@@ -7,7 +7,10 @@ for (let i = 0; i < links.length; i++) {
     })
     
 }
-
+//Force page scroll position to top at page refresh in HTML
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
 
 let navlist = document.querySelector('.navlist');
 let hamburgerButton = document.querySelector('#hamburger');
