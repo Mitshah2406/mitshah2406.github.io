@@ -30,7 +30,9 @@ html {
   scroll-padding-top: 7rem;
   overflow-x: hidden;
 }
-
+body{
+  overflow-x: hidden;
+}
 ::-webkit-scrollbar {
   width: 1rem;
 }
